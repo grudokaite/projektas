@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>By My Mini - mažylių butikėlis</title>
+  </head>
+  <body>
+    <!-- -----------header-------- -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> <img src="img/bymymini-logo.png" alt="bymymini logo"></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__items">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-heart-line"></i>
+                <span>Pagrindinis</span>
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#shop" class="nav__link">
+                <i class="ri-store-2-line"></i>
+                <span>Parduotuvė</span>
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#blog" class="nav__link">
+                <i class="ri-quill-pen-line"></i>
+                <span>Blogas</span>
+              </a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#special" class="nav__link">
+                <i class="ri-heart-3-line"></i>
+                <span>Geriausi</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <i class="ri-moon-fill change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <!-- --------------------Main------------------ -->
+    <main class="main">
+      <!-- ---------home-------- -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Prekės patiems <br />
+              mažiausiems
+            </h1>
+
+            <p class="home__description">
+              Kad vaikystė ir tėvystė kiekvieną <br />
+              dieną būtų pats laimingiausias laikas!
+            </p>
+
+            <a href="#shop" class="button__link">
+              Į parduotuvę <i class="ri-arrow-right-s-fill"></i>
+            </a>
+          </div>
+
+          <div class="home__images">
+            <img src="img/main-img-1.jpg" alt="main image" />
+            <img src="img/main-img-5.jpg" alt="main image" />
+            <img src="img/main-img-2.jpg" alt="main image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------shop------------ -->
+      <section class="shop section" id="shop">
+        <h2 class="section__title">Kategorijos</h2>
+        <div class="new__conainer container grid">
+          <article class="new__card">
+            <img
+              src="img/Kasdienai.jpg"
+              alt="kasdienai image"
+              class="new__img"
+            />
+            <a href="/shop.html" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Kasdienai</h2>
+                <span class="new__subtitle">Viskas mažylių kasdienai</span>
+              </div>
+              <i class="ri-arrow-right-s-fill"></i>
+            </a>
+          </article>
+
+          <article class="new__card">
+            <img src="img/Tekstilė.jpg" alt="tekstilė image" class="new__img" />
+            <a href="/shop.html" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Tekstilė</h2>
+                <span class="new__subtitle"
+                  >Vystiklai, merliukai ir patalynė</span
+                >
+              </div>
+              <i class="ri-arrow-right-s-fill"></i>
+            </a>
+          </article>
+
+          <article class="new__card">
+            <img
+              src="img/Kosmetika.jpg"
+              alt="kosmetika image"
+              class="new__img"
+            />
+            <a href="/shop.html" class="new__link">
+              <div class="new__data">
+                <h2 class="new__title">Kosmetika</h2>
+                <span class="new__subtitle">Kūdikių ir vaikų kosmetika</span>
+              </div>
+              <i class="ri-arrow-right-s-fill"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- --------------blog------------>
+      <section class="blog section" id="blog">
+        <div class="blog__container container">
+          <div class="blog__explore">
+            <div class="blog__data-blog">
+              <h2 class="blog__title">Blogas</h2>
+              <a href="/blog.html" class="button__link"
+                >Skaityti mūsų blogą<i class="ri-arrow-right-s-fill"></i
+              ></a>
+            </div>
+            <img src="img/blog-img.jpg" alt="blog image" />
+          </div>
+          <div class="blog__explore">
+            <img src="img/about-img.jpg" alt="about us image" />
+            <div class="blog__data-about">
+              <h2 class="blog__title">Apie mus</h2>
+              <i class="ri-arrow-left-s-fill"></i>
+              <a href="/about.html" class="button__link">Sužinoti apie mus</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------best of the best----------->
+      <section class="products section" id="products">
+        <h2 class="section__title">Mėgstamiausios Jūsų prekės</h2>
+
+        <div class="products__container container swiper">
+          <div class="swiper-wrapper">
+
+            <article class="products__card swiper-slide">
+                <img
+                  src="img/SPOON_img.jpg"
+                  alt="products-img"
+                  class="products_img"
+                />
+                <h2 class="products__title">Mushie šaukštų rinkinys </h2>
+                <span class="products__price">11.00 Eur</span>
+              </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="img/bibs-skyblue-babyblue-img.jpg"
+                alt="product-img"
+                class="products_img"
+              />
+              <h2 class="products__title">Bibs Colour čiulptukai</h2>
+              <span class="products__price">9.95 Eur</span>
+            </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="img/Saga-washcloth-img.jpg"
+                alt="product-img"
+                class="products_img"
+              />
+              <h2 class="products__title">SAGA Copenhagen merliukų rinkinys</h2>
+              <span class="products__price">15.00 Eur</span>
+            </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="img/Saga-Snoppa-Cuddlecloth-MoonlightBlue-img.jpg"
+                alt="products-img"
+                class="products_img"
+              />
+              <h2 class="products__title">SAGA Copenhagen migdukas</h2>
+              <span class="products__price">31.00 Eur</span>
+            </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="img/he-or-she-img.jpg"
+                alt="products-img"
+                class="products_img"
+              />
+              <h2 class="products__title">HEorSHE gertuvė</h2>
+              <span class="products__price">18.00 Eur</span>
+            </article>
+
+            <article class="products__card swiper-slide">
+              <img
+                src="img/Saga-lubbi-bedlinen-img.jpg"
+                alt="product-img"
+                class="products_img"
+              />
+              <h2 class="products__title">SAGA Copenhagen patalynė</h2>
+              <span class="products__price">35.00 Eur</span>
+            </article>
+          </div>
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-fill"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-fill"></i>
+          </div>
+        </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- -----------------footer------------ -->
+<footer class="footer section">
+    <div class="footer__container container grid">
+        <div>
+            <a href="#" class="footer__logo"><img src="img/bymymini-logo.png" alt="bymymini logo"></a>
+            <p class="footer__description">
+                „Kokia šiandien diena?“ - paklausė Mikė Pūkuotukas.<br/>
+                „Šiandiena“, - atsakė Paršelis.<br/>
+                „Mano mėgstamiausia diena“, -tarė Mikė Pūkuotukas.</p>
+        </div>
+
+        <div class="footer__content">
+
+          <div>
+            <h3 class="footer__title">By My Mini</h3>
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Parduotuvė</a>
+                </li>
+                <li><a href="contact.html" class="footer__link">Kontaktai</a>
+                </li>
+                <li><a href="privacy.html" class="footer__link">Privatumo politika</a>
+                </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Blogas</h3>
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Naudingi straipsniai</a>
+                </li>
+                <li><a href="#" class="footer__link">Renginiai</a>
+                </li>
+                <li><a href="#" class="footer__link">Mama mamai</a>
+                </li>
+            </ul>
+           </div>
+
+           <div>
+            <h3 class="footer__title">Darbo laikas</h3>
+            <li><a href="#" class="footer__link">Pirmadienis - Penktadieni <br>
+                09:00 - 18:00</a>
+            </li>
+           </div>
+
+         <div>
+            <h3 class="footer__title">Bendraukime</h3>
+            <ul class="footer__social-media">
+                <a href="https://www.facebook.com/bymymini/" target="_blank" class="footer__social-link"> <i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/bymymini.lt/" target="_blank" class="footer__social-link"><i class="ri-instagram-fill"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=37069330429&text=Sveiki, netrukus susisieksime!" target="_blank" class="footer__social-link"> <i class="ri-whatsapp-line"></i></a>
+            </ul>
+           </div>
+</div>
+    </div>
+    <div class="footer__info container">
+        <span class="footer__copy">
+            &#169: Visos teisės saugomos ByMyMini.lt 
+        </span>
+    </div>
+</footer>
+
+<a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-s-line"></i></a>
+<script src="js/scrollreveal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
